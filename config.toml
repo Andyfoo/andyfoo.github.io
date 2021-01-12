@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "http://andyfoo.github.io/"
+languageCode = "zh-cn"
+title = "Andyfoo 的博客"
 publishDir = "_docs"
