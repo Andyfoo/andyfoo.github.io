@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Febit Wit (Webit Script)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="Shortcut Icon" href="favicon.ico" />
+<link rel="stylesheet" href="css/css.css" media="screen"/>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+<div class="ws-container">
+<div class="navbar-header">
+<a href="index.html" class="navbar-brand">Febit Wit</a>
+</div>
+<div id="navbar-main" class="navbar-collapse">
+<ul class="nav navbar-nav">
+<li><a href="index.html">简介</a></li>
+<li><a href="example.html">示例</a></li>
+<li><a href="syntax.html">语法</a></li>
+<li><a href="props.html">配置</a></li>
+<li><a href="integration.html">集成</a></li>
+<li><a href="libapi.html">库/API</a></li>
+<li><a href="faq.html">常见问题</a></li>
+<li><a href="https://github.com/zqq90/zqq90.github.io/archive/master.zip" style="color: #fae413" target="_blank">下载本文档</a></li>
+</div>
+</div>
+</div>
+<div class="ws-container ws-doc-main-body"><div class="ws-sidenav"><ul class="nav"><li><a href="#section">下载</a></li><li><a href="#maven">Maven</a></li><li><a href="#section-1">许可证</a></li><li><a href="#section-2">第三方许可证</a></li><li><a href="#bug">bug反馈</a></li></ul></div><div class="ws-doc-body" >
+<pre class="brush: js;">&lt;%
+    var name = "Febit Wit";
+%&gt;
+Hello ${name || "friend"}
+</pre>
+
+<p>这是一个 <code>Java</code> 平台下的模板引擎，语法类似 <code>JavaScript</code>，支持自定义函数，全局变量，<code>Lambda</code> 表达式，核心模块轻巧，无第三方依赖，采用 <code>BSD</code> 开源协议。</p>
+
+<h2 id="section">下载</h2>
+
+<ul>
+  <li>jar 包：<a href="http://central.maven.org/maven2/org/febit/wit/wit-core/2.3.0-beta/wit-core-2.3.0-beta.jar"><strong>wit-core.jar</strong></a></li>
+  <li>源代码：<a href="http://central.maven.org/maven2/org/febit/wit/wit-core/2.3.0-beta/wit-core-2.3.0-beta-sources.jar"><strong>wit-core-sources.jar</strong></a></li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>代码托管: <a href="https://github.com/febit/wit">Github</a></td>
+          <td><a href="http://git.oschina.net/zqq90/webit-script">开源中国(oschina.net)</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>文档: <a href="https://github.com/zqq90/zqq90.github.io/archive/master.zip">本站</a></li>
+</ul>
+
+<h2 id="maven">Maven</h2>
+
+<pre class="brush: xml;">&lt;!-- 核心包 --&gt;
+&lt;dependency&gt;
+  &lt;groupId&gt;org.febit.wit&lt;/groupId&gt;
+  &lt;artifactId&gt;wit-core&lt;/artifactId&gt;
+  &lt;version&gt;2.3.0-beta&lt;/version&gt;
+&lt;/dependency&gt;
+
+&lt;!-- 扩展工具包 --&gt;
+&lt;dependency&gt;
+  &lt;groupId&gt;org.febit.wit&lt;/groupId&gt;
+  &lt;artifactId&gt;wit-tools&lt;/artifactId&gt;
+  &lt;version&gt;2.3.0-beta&lt;/version&gt;
+&lt;/dependency&gt;
+
+&lt;!-- Spring MVC 3.x 扩展包 --&gt;
+&lt;dependency&gt;
+  &lt;groupId&gt;org.febit.wit&lt;/groupId&gt;
+  &lt;artifactId&gt;wit-springmvc3&lt;/artifactId&gt;
+  &lt;version&gt;2.3.0-beta&lt;/version&gt;
+&lt;/dependency&gt;
+
+&lt;!-- Jodd Madvoc 3.5+ 扩展包 --&gt;
+&lt;dependency&gt;
+  &lt;groupId&gt;org.febit.wit&lt;/groupId&gt;
+  &lt;artifactId&gt;wit-jodd3&lt;/artifactId&gt;
+  &lt;version&gt;2.3.0-beta&lt;/version&gt;
+&lt;/dependency&gt;
+
+&lt;!-- Struts 2.x 扩展包 --&gt;
+&lt;dependency&gt;
+  &lt;groupId&gt;org.febit.wit&lt;/groupId&gt;
+  &lt;artifactId&gt;wit-struts2&lt;/artifactId&gt;
+  &lt;version&gt;2.3.0-beta&lt;/version&gt;
+&lt;/dependency&gt;
+
+&lt;!-- JFinal 扩展包 --&gt;
+&lt;dependency&gt;
+  &lt;groupId&gt;org.febit.wit&lt;/groupId&gt;
+  &lt;artifactId&gt;wit-jfinal&lt;/artifactId&gt;
+  &lt;version&gt;2.3.0-beta&lt;/version&gt;
+&lt;/dependency&gt;
+</pre>
+
+<h2 id="section-1">许可证</h2>
+
+<blockquote>
+  <p><strong>Febit Wit</strong> 依据 BSD许可证发布。详细请看 <a href="license.html">LICENSE</a> 文件。</p>
+</blockquote>
+
+<h2 id="section-2">第三方许可证</h2>
+
+<ul>
+  <li><strong>ASM</strong>  BSD协议.<a href="http://asm.ow2.org/license.html">License file</a></li>
+</ul>
+
+<blockquote>
+  <p>已经内置 ASM 不需要导入其他第三方依赖</p>
+</blockquote>
+
+<h2 id="bug">bug反馈</h2>
+
+<ul>
+  <li><a href="https://github.com/febit/wit/issues/new">github-issue</a></li>
+</ul>
+
+</div>
+<div class="footer">
+版权所有 2013-2017 febit.org
+</div>
+</div>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+</body>
+</html>
