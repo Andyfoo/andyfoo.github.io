@@ -1,4 +1,4 @@
-baseURL = "https://andyfoo.github.io/"
+baseURL = "./"
 languageCode = "zh-cn"
 title = "Andyfoo 的博客"
 publishDir = "docs"
